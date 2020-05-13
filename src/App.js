@@ -118,32 +118,6 @@ function App() {
        });
    }
 
-   // async function UploadImage(e){
-   //   //For image uplaod, access to fireabse storage
-   //   const storageRef = firebase.storage().ref();
-   //   const fileReference = e.currentTarget.postImage.files[0];
-   //   const uploadTask = storageRef
-   //    .child(`${fileReference.name}`)
-   //    .put(fileReference);
-   //
-   //    uploadTask.on(
-   //      'state_changed',
-   //      (snapshot) => {},
-   //      (error) => {
-   //        console.log(error);
-   //      },
-   //      () => {
-   //        uploadTask
-   //          .snapshot
-   //          .Reference.getDownloadURL()
-   //          .then(function(downloadURL){
-   //            console.log("File available at", downloadURL);
-   //            return downloadURL;
-   //          });
-   //      }
-   //    );
-   // }
-
   function createPostWithImage(e){
      e.preventDefault();
      //For image uplaod, access to fireabse storage

@@ -1,36 +1,59 @@
 *{
-  /* background-color: black;
-  color: white; */
+  background-color: #181b46;
+  color: #Fec804;
+}
+
+h1{
+  font-family: fantasy;
+  text-align: center;
+  padding: 10px;
+}
+
+h2{
+    padding: 10px;
+  font-family: fantasy;
+  font-weight: lighter;
+  text-align: center;
 }
 
 .Wrapper{
   margin: 0px auto;
+  padding: 20px;
   max-width: 1040px;
+  padding: 10px;
 }
 
 .Header{
-  background-color: grey;
+  background-color: #F26322;
   border-bottom: 1px solid black;
   width: 100%;
   padding: 20px;
 }
 
+.Header_logo{
+  height: 10vh;
+  width: auto;
+  background-color: #F26322;
+}
+
 .Header_wrapper{
+  background-color: #F26322;
   align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 0px auto;
   max-width: 1040px;
-  padding: 0px 25px;
+    padding: 10px;
 }
 
 .Header_nav a{
+  background-color: #F26322;
   color: black;
-  font-weight: bold;
-  margin: 0px 10px;
-  padding: 2px 5px;
+  padding: 25px;
   text-decoration: none;
+  font-family: fantasy;
+  font-weight: lighter;
 }
 
 .Header_nav a:last-of-type{
@@ -44,15 +67,23 @@
   }
 }
 
+button{
+  border-radius: 25px;
+  font-family: fantasy;
+}
+
 .Form{
   display: flex;
   flex-direction: column;
+  background-color: #7a2d59;
+  border-radius: 25px;
+    padding: 10px;
 }
 
 .Form label{
-  font-size: 16px;
+  font-size: 10px;
   font-weight: bold;
-  opacity: 0.7;
+  background-color: #7a2d59;
   margin-bottom: 5px;
   text-transform: uppercase;
 }
@@ -64,8 +95,13 @@
 }
 
 .Form button{
+  width: 50%;
+  text-align: center;
+  margin-left: 25%;
   font-size: 16px;
   padding: 10px 5px;
+  color: black;
+  background-color: #F26322;
 }
 
 .CreateWrapper{
@@ -75,20 +111,32 @@
   justify-content: space-between;
 }
 
-/* .CreateWrapper > div, .CreateWrapper > form{
-  align-items: flex-start;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-} */
-
 .CreateInformation{
-  padding-left: 50px
+  padding-left: 400px;
+  color: white;
 }
 
 .LoginForm{
   max-width: 500px;
   margin: 0px;
+}
+
+
+.CreatePost p{
+  margin-left: 10vw;
+  background-color: #7a2d59;
+  border-radius: 20px;
+  padding: 25px;
+  width: 50vw;
+}
+
+.CreatePost a{
+  background-color: #7a2d59;
+  padding: 10px;
+}
+
+a{
+  text-decoration: none;
 }
 
 .SinglePost{

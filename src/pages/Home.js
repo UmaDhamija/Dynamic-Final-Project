@@ -60,15 +60,15 @@ function Home({userInformation, createPostWithImage}) {
 
   return(
     <div className="Wrapper">
-      <h1>Welcome, {email}</h1>
+      <h1>Welcome, {email}! Post a comment with an image. </h1>
 
       <div className="CreatePost">
         <h2>Add a Post!</h2>
         <CreatePostForm createPostFunction={createPostWithImage}/>
       </div>
 
-      <div className="">
-        <h2>All Posts</h2>
+      <div className="CreatePost">
+        <h2>See All Posts:</h2>
         {/*DISPLAY ALL POSTS HERE*/}
         {allPosts.map((post, i) => (
           <p key={i}>

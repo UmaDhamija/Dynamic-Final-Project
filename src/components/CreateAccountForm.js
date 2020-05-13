@@ -10,7 +10,7 @@ function CreateAccountForm({CreateAccountFunction}){
         <label htmlFor="createPassword"> Password </label>
         <input type="password" name="createPassword" />
 
-        <button> Create Account </button>
+        <button> Sign Up </button>
       </form>
     </div>
   )

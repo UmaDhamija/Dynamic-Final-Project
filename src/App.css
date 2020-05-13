@@ -1,38 +1,102 @@
-.App {
+*{
+  /* background-color: black;
+  color: white; */
+}
+
+.Wrapper{
+  margin: 0px auto;
+  max-width: 1040px;
+}
+
+.Header{
+  background-color: grey;
+  border-bottom: 1px solid black;
+  width: 100%;
+  padding: 20px;
+}
+
+.Header_wrapper{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px auto;
+  max-width: 1040px;
+  padding: 0px 25px;
+}
+
+.Header_nav a{
+  color: black;
+  font-weight: bold;
+  margin: 0px 10px;
+  padding: 2px 5px;
+  text-decoration: none;
+}
+
+.Header_nav a:last-of-type{
+  margin-right: 0px;
+  padding-right: 0px;
+}
+
+@media (max-width: 1040px){
+  .Header_wrapper{
+    flex-direction: column;
+  }
+}
+
+.Form{
+  display: flex;
+  flex-direction: column;
+}
+
+.Form label{
+  font-size: 16px;
+  font-weight: bold;
+  opacity: 0.7;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.Form input{
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 8px 5px;
+}
+
+.Form button{
+  font-size: 16px;
+  padding: 10px 5px;
+}
+
+.CreateWrapper{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* .CreateWrapper > div, .CreateWrapper > form{
+  align-items: flex-start;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+} */
+
+.CreateInformation{
+  padding-left: 50px
+}
+
+.LoginForm{
+  max-width: 500px;
+  margin: 0px;
+}
+
+.SinglePost{
+  max-width: 550px;
+  padding: 60px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SinglePost img{
+  width: 100%;
 }
